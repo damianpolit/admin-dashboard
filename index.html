@@ -13,9 +13,8 @@
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
-<body>
-     
-           
+<body ng-app="myApp"> 
+          
           
     <div id="wrapper">
          <div class="navbar navbar-inverse navbar-fixed-top">
@@ -81,7 +80,8 @@
 
         </nav>
         <!-- /. NAV SIDE  -->
-        <div id="page-wrapper" >
+        <div id="page-wrapper" ng-controller="MainController">
+
             <div id="page-inner">
                 <div class="row">
                     <div class="col-lg-12">
@@ -104,7 +104,7 @@
                       <div class="div-square">
                            <a href="blank.html" >
  <i class="fa fa-circle-o-notch fa-5x"></i>
-                      <h4>Statystyki</h4>
+                      <h4>Statystyki (Neaktywny)</h4>
                       </a>
                       </div>
                      
@@ -115,7 +115,7 @@
                       <div class="div-square">
                            <a href="blank.html" >
  <i class="fa fa-envelope-o fa-5x"></i>
-                      <h4>Skrzynka Mailowa</h4>
+                      <h4>Skrzynka Mailowa (Neaktywny)</h4>
                       </a>
                       </div>
                      
@@ -125,7 +125,7 @@
                       <div class="div-square">
                            <a href="blank.html" >
  <i class="fa fa-lightbulb-o fa-5x"></i>
-                      <h4>Nowości / zmiany</h4>
+                      <h4>Nowości / zmiany (Neaktywny)</h4>
                       </a>
                       </div>
                      
@@ -135,7 +135,7 @@
                       <div class="div-square">
                            <a href="blank.html" >
  <i class="fa fa-users fa-5x"></i>
-                      <h4>Użytkownicy</h4>
+                      <h4>Użytkownicy (Neaktywny)</h4>
                       </a>
                       </div>
                      
@@ -145,7 +145,7 @@
                       <div class="div-square">
                            <a href="blank.html" >
  <i class="fa fa-key fa-5x"></i>
-                      <h4>Admin panel</h4>
+                      <h4>Admin panel (Neaktywny)</h4>
                       </a>
                       </div>
                      
@@ -169,7 +169,7 @@
                       <div class="div-square">
                            <a href="blank.html" >
  <i class="fa fa-clipboard fa-5x"></i>
-                      <h4>Poradniki</h4>
+                      <h4>Poradniki (Neaktywny)</h4>
                       </a>
                       </div>
                      
@@ -179,7 +179,7 @@
                       <div class="div-square">
                            <a href="blank.html" >
  <i class="fa fa-gear fa-5x"></i>
-                      <h4>Ustawienia</h4>
+                      <h4>Ustawienia (Neaktywny)</h4>
                       </a>
                       </div>
                      
@@ -189,7 +189,7 @@
                       <div class="div-square">
                            <a href="blank.html" >
  <i class="fa fa-wechat fa-5x"></i>
-                      <h4>Czat (nieaktywny)</h4>
+                      <h4>Czat {{ unact }}</h4>
                       </a>
                       </div>
                      
@@ -199,19 +199,19 @@
                       <div class="div-square">
                            <a href="blank.html" >
  <i class="fa fa-bell-o fa-5x"></i>
-                      <h4>Powiadomienia</h4>
+                      <h4>Powiadomienia (Neaktywny)</h4>
                       </a>
                       </div>
                      
                      
                   </div>
-                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                 <!-- <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                       <div class="div-square">
                            <a href="blank.html" >
  <i class="fa fa-rocket fa-5x"></i>
                       <h4>Launch</h4>
                       </a>
-                      </div>
+                      </div> -->
                      
                      
                  <!-- </div>
@@ -241,7 +241,7 @@
     
             <div class="row">
                 <div class="col-lg-12" >
-                    &copy;  2014 yourdomain.com | Design by: <a href="http://binarytheme.com" style="color:#fff;" target="_blank">www.binarytheme.com</a>
+                    &copy;  2018 <a href="https://just2know.pl">just2know.pl</a>
                 </div>
             </div>
         </div>
