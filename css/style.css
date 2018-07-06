@@ -9903,3 +9903,11 @@ span.customSelect.changed {
 #sendmessage.show, #errormessage.show, .show {
 	display:block;
 }
+
+.login-social-link a.instagram {
+
+    background: #cd486b;
+
+    box-shadow: 0 4px #2bb4e8;
+
+	float:left;
